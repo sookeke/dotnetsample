@@ -5,8 +5,8 @@
 // the getVersionFromPom will attempt to read the version information that it encounter at the
 // first occurance.
 
-def DEV_PROJECTNAME = "poc-dev1"
-def UAT_PROJECTNAME = "poc-uat"
+def DEV_PROJECTNAME = "dotnet-dev"
+def UAT_PROJECTNAME = "dotnet-uat"
 def BUILDCONFIGNAME="sampledotnet"
 def IMAGE_NAME="sampledotnet:latest"
 def UATIMAGENAME = "sampledotnet:UATReady-1.0.0"
