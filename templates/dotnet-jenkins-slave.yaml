@@ -18,7 +18,7 @@ data:
       <containers>
         <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
           <name>jnlp</name>
-          <image>registry.redhat.io/dotnet/dotnet-21-jenkins-slave-rhel7</image>
+          <image>registry.redhat.io/dotnet/dotnet-22-jenkins-slave-rhel7</image>
           <privileged>false</privileged>
           <alwaysPullImage>true</alwaysPullImage>
           <workingDir>/tmp</workingDir>
