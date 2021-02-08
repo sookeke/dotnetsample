@@ -5,20 +5,20 @@ metadata:
   labels:
     role: jenkins-slave
 data:
-  dotnet21: |-
+  dotnet22: |-
     <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
       <inheritFrom></inheritFrom>
-      <name>dotnet-21</name>
+      <name>dotnet-22</name>
       <instanceCap>100</instanceCap>
       <idleMinutes>0</idleMinutes>
-      <label>dotnet-21</label>
+      <label>dotnet-22</label>
       <serviceAccount>jenkins</serviceAccount>
       <nodeSelector></nodeSelector>
       <volumes/>
       <containers>
         <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
           <name>jnlp</name>
-          <image>dotnet/dotnet-21-jenkins-slave-rhel7</image>
+          <image>registry.redhat.io/dotnet/dotnet-21-jenkins-slave-rhel7</image>
           <privileged>false</privileged>
           <alwaysPullImage>true</alwaysPullImage>
           <workingDir>/tmp</workingDir>
