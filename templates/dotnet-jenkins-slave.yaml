@@ -1,24 +1,24 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: dotnet-jenkins-slave-30
+  name: dotnet-jenkins-slave-31
   labels:
     role: jenkins-slave
 data:
   dotnet22: |-
     <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
       <inheritFrom></inheritFrom>
-      <name>dotnet-30</name>
+      <name>dotnet-31</name>
       <instanceCap>100</instanceCap>
       <idleMinutes>0</idleMinutes>
-      <label>dotnet-30</label>
+      <label>dotnet-31</label>
       <serviceAccount>jenkins</serviceAccount>
       <nodeSelector></nodeSelector>
       <volumes/>
       <containers>
         <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
           <name>jnlp</name>
-          <image>registry.redhat.io/dotnet/dotnet-30-jenkins-slave-rhel7</image>
+          <image>registry.redhat.io/dotnet/dotnet-31-jenkins-slave-rhel7</image>
           <privileged>false</privileged>
           <alwaysPullImage>true</alwaysPullImage>
           <workingDir>/tmp</workingDir>
