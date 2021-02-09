@@ -1,17 +1,17 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: dotnet-jenkins-slave-22
+  name: dotnet-jenkins-slave-30
   labels:
     role: jenkins-slave
 data:
   dotnet22: |-
     <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
       <inheritFrom></inheritFrom>
-      <name>dotnet-22</name>
+      <name>dotnet-30</name>
       <instanceCap>100</instanceCap>
       <idleMinutes>0</idleMinutes>
-      <label>dotnet-22</label>
+      <label>dotnet-30</label>
       <serviceAccount>jenkins</serviceAccount>
       <nodeSelector></nodeSelector>
       <volumes/>
