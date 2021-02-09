@@ -48,7 +48,7 @@ function PrepareURL(){
     if [[ -n "$CONTINUATIONTOKEN" ]]; then
         PARAMS="&continuationToken=$CONTINUATIONTOKEN"
     fi
-    REQUEST_URL="http://nexus3-poc-tools.apps.ocp.demo.com/service/rest/v1/assets?repository=nuget.org-proxy$PARAMS"
+    REQUEST_URL="http://nexus-cicd-developer.2886795282-80-kota02.environments.katacoda.com/repository/nuget.org-proxy$PARAMS"
     echo "REQUEST_URL = $REQUEST_URL"
 }
 
